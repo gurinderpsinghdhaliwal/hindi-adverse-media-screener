@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.1-flash-lite"
 
 # The prompt is the whole product. This is the piece to iterate on.
 SYSTEM_PROMPT = """You are an AML/KYC compliance analyst screening Hindi-language news articles for adverse media indicators.
